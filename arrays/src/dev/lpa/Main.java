@@ -20,10 +20,22 @@ public class Main {
 
 
         int[] newArray;
-        newArray = new int[]{5, 4, 3, 2, 1};
+//        newArray = new int[]{5, 4, 3, 2, 1};
+        newArray = new int[5];
+        for (int i = 0; i < newArray.length; i++) {
+            newArray[i] = newArray.length - i;
+        }
+
+
         for (int i = 0; i < newArray.length; i++) {
             System.out.println(newArray[i] + " ");
         }
+        System.out.println();
+        for (int element : newArray) {
+            System.out.println(element + " ");
+        }
+        System.out.println();
+        System.out.println(newArray);
 
     }
 }
