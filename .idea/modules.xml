@@ -26,6 +26,7 @@
       <module fileurl="file://$PROJECT_DIR$/strings/strings.iml" filepath="$PROJECT_DIR$/strings/strings.iml" />
       <module fileurl="file://$PROJECT_DIR$/switch/switch.iml" filepath="$PROJECT_DIR$/switch/switch.iml" />
       <module fileurl="file://$PROJECT_DIR$/switchChallenge/switchChallenge.iml" filepath="$PROJECT_DIR$/switchChallenge/switchChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usingJavaUtils/usingJavaUtils.iml" filepath="$PROJECT_DIR$/usingJavaUtils/usingJavaUtils.iml" />
       <module fileurl="file://$PROJECT_DIR$/whileLoop/whileLoop.iml" filepath="$PROJECT_DIR$/whileLoop/whileLoop.iml" />
     </modules>
   </component>
