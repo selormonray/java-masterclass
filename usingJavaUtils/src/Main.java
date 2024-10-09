@@ -24,7 +24,7 @@ public class Main {
 
 //        sort the arrays
 
-        /* arrays dot sort passing fourth array. and I'll print
+      /*   arrays dot sort passing fourth array. and I'll print
         out third array first using arrays dot too
         string. and then fourth array. And running this code.
                 You can see that fourth array is sorted, but the
@@ -48,6 +48,14 @@ public class Main {
 //        copy plus additional elements
         int[] largerArray = Arrays.copyOf(thirdArray, 15);
         System.out.println(Arrays.toString(largerArray));
+
+//        arrays binary search
+        String[] sArray = {"Able", "Jane", "Mark", "Ralph", "David"};
+        Arrays.sort(sArray);
+        System.out.println(Arrays.toString(sArray));
+        if (Arrays.binarySearch(sArray, "Mark") >= 0) {
+            System.out.println("Mark is found in the list");
+        }
     }
 
     //    method that returns an array of random integers
