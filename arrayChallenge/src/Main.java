@@ -9,6 +9,8 @@ public class Main {
         int[] unsortedArray = getRandomArray(20);
         System.out.println(Arrays.toString(unsortedArray));
 
+        int[] sortedArray = sortIntegers(new int[]{7, 30, 35});
+        System.out.println(Arrays.toString(sortedArray));
 //        sort in reverse order
 
 
@@ -38,8 +40,10 @@ public class Main {
                     sortedArray[i] = sortedArray[i + 1];
                     sortedArray[i + 1] = temp;
                     flag = true;
+                    System.out.println("---->" + Arrays.toString(sortedArray));
                 }
             }
+            System.out.println("---->" + Arrays.toString(sortedArray));
         }
         return sortedArray;
     }
