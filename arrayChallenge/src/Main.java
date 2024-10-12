@@ -11,8 +11,6 @@ public class Main {
 
         int[] sortedArray = sortIntegers(new int[]{7, 30, 35});
         System.out.println(Arrays.toString(sortedArray));
-//        sort in reverse order
-
 
     }
 
