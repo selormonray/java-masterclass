@@ -29,5 +29,11 @@ public class Main {
 //        }
 
         System.out.println(Arrays.deepToString(array2));
+
+        array2[1] = new int[]{10, 20, 30};
+        System.out.println(Arrays.deepToString(array2));
+
+        Object[] anyArray = new Object[3];
+        System.out.println(Arrays.toString(anyArray));
     }
 }
