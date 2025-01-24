@@ -31,6 +31,11 @@ public class Main {
 //        specify a type for ArrayList
         ArrayList<GroceryItem> groceryList = new ArrayList<>();
         groceryList.add(new GroceryItem("Butter"));
+        groceryList.add(new GroceryItem("milk"));
+        groceryList.add(new GroceryItem("oranges", "PRODUCE", 5));
+        groceryList.add(0, new GroceryItem("apples", "PRODUCE", 6));
+        groceryList.remove(1);
+        System.out.println(groceryList);
     }
 
     //    create a record called grocery item pwith 3 fields
@@ -38,6 +43,11 @@ public class Main {
 
         public GroceryItem(String name) {
             this(name, "DAIRY", 1);
+        }
+
+        @Override
+        public String toString() {
+            return String.format("%d %s in %s", count, name.toUpperCase(), type);
         }
     }
 }
