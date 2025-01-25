@@ -45,12 +45,15 @@ public class MoreLists {
 
         groceries.clear();
         System.out.println(groceries);
-        System.out.println("isEmpty = " + groceries.isEmpty());
+//        System.out.println("isEmpty = " + groceries.isEmpty());
 
         groceries.addAll(List.of("apples", "milk", "mustard", "cheese"));
         groceries.addAll(Arrays.asList("eggs", "pickles", "mustard", "ham"));
         System.out.println(groceries);
         groceries.sort(Comparator.naturalOrder());
+        System.out.println(groceries);
+
+        groceries.sort(Comparator.reverseOrder());
         System.out.println(groceries);
 
     }

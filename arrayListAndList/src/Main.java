@@ -21,12 +21,12 @@ public class Main {
         /*
          * creating a grocery list using the ArrayList class instead of an array.
          * */
-        ArrayList objectList = new ArrayList();
+        /*ArrayList objectList = new ArrayList();
 
 //        add entries to the array list
         objectList.add(new GroceryItem("butter"));
         objectList.add("Yoghurt");
-
+*/
 
 //        specify a type for ArrayList
         ArrayList<GroceryItem> groceryList = new ArrayList<>();
