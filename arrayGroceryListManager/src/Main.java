@@ -32,5 +32,7 @@ public class GroceryListManager {
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
-
+            printSortedGroceryList();
+        }
+        scanner.close();
 }
