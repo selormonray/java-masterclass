@@ -15,6 +15,7 @@ public class GroceryListManager {
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // consume the newline character
+
             switch (choice) {
                 case 0:
                     System.out.println("Shutting down...");
@@ -80,5 +81,4 @@ public class GroceryListManager {
             System.out.println("Current grocery list (sorted): " + sortedList);
         }
     }
-
 }
