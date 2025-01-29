@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class GroceryListManager {
     private static final List<String> groceryList = new ArrayList<>();
@@ -80,5 +77,18 @@ public class GroceryListManager {
             Collections.sort(sortedList);
             System.out.println("Current grocery list (sorted): " + sortedList);
         }
+    }
+
+    private static void addMoreElements(LinkedList<String> list) {
+
+        list.addFirst("Darwin");
+        list.addLast("Hobart");
+        // Queue methods
+        list.offer("Melbourne");
+        list.offerFirst("Brisbane");
+        list.offerLast("Toowoomba");
+        // Stack Methods
+        list.push("Alice Springs");
+
     }
 }
