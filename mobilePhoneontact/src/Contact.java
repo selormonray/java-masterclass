@@ -31,21 +31,19 @@ class MobilePhone {
         this.myContacts = new ArrayList<>();
     }
 
-    public boolean addNewContact(Contact contact) {
+    public void addNewContact(Contact contact) {
         if (findContact(contact.getName()) >= 0) {
-            return false;
+            return;
         }
         myContacts.add(contact);
-        return true;
     }
 
-    public boolean updateContact(Contact oldContact, Contact newContact) {
+    public void updateContact(Contact oldContact, Contact newContact) {
         int position = findContact(oldContact);
         if (position < 0) {
-            return false;
+            return;
         }
         myContacts.set(position, newContact);
-        return true;
     }
 
     public void removeContact(Contact contact) {
