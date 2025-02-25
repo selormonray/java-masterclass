@@ -48,13 +48,12 @@ class MobilePhone {
         return true;
     }
 
-    public boolean removeContact(Contact contact) {
+    public void removeContact(Contact contact) {
         int position = findContact(contact);
         if (position < 0) {
-            return false;
+            return;
         }
         myContacts.remove(position);
-        return true;
     }
 
     private int findContact(Contact contact) {
