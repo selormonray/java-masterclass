@@ -46,13 +46,6 @@ class MobilePhone {
         myContacts.set(position, newContact);
     }
 
-    public void removeContact(Contact contact) {
-        int position = findContact(contact);
-        if (position < 0) {
-            return;
-        }
-        myContacts.remove(position);
-    }
 
     private int findContact(Contact contact) {
         return myContacts.indexOf(contact);
